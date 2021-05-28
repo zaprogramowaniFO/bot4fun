@@ -31,6 +31,11 @@ client.on('message', msg => {
       msg.channel.send(attachment);
     }
 
+
+    const info = ["Serwus!","Jakie chcesz info?",
+  "Funckje jakie obsługuję na tę chwilę to:",
+  "pomoc, info, autor"]
+
     if(msg.content.startsWith(prefix)){
             const message = msg.content.slice(prefix.length);
             console.log(message);
@@ -38,7 +43,7 @@ client.on('message', msg => {
             msg.reply("W czym mogę pomóc?");
         }
         if(message === "info"){
-            msg.author.send('jakie chcesz info?');
+            msg.author.send(info);
             if(msg.channel.type === 'dm') return;
             msg.reply('wysłałem Ci info na DM!');
         }
