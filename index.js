@@ -46,4 +46,6 @@ client.on('message', msg => {
 
 });
 
+//miejsce na token;
+
 client.login(token.token);
