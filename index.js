@@ -42,6 +42,11 @@ client.on('message', msg => {
             if(msg.channel.type === 'dm') return;
             msg.reply('wysłałem Ci info na DM!');
         }
+        if(message === "autor"){
+          const author = "zaprogramowani"
+          msg.channel.send(`Bot został stworzny na zajęciach **${author}**`)
+
+        }
     }
 
 });
